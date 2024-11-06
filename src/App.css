@@ -22,7 +22,6 @@ body {
 .logo {
   font-size: 1.5em;
   font-weight: bold;
-  
 }
 
 /* Home Container - Takes full height of the screen */
@@ -83,7 +82,7 @@ body {
 /* Category Grid */
 .services-container {
   background-color: #f9f9f9;
-  padding: 90px;
+  padding: 150px;
 }
 
 .services-container header h1 {
@@ -92,12 +91,13 @@ body {
   margin-bottom: 20px;
 }
 
+/* Category Grid */
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 items in a row */
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 20px;
   margin: 0 auto;
-  max-width: 1200px; /* Limit the width of the grid */
+  max-width: 1200px;
 }
 
 .category-item {
@@ -105,7 +105,7 @@ body {
 }
 
 .category-img-container {
-  height: 200px;
+  height: 300px; /* Increase the height here */
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
@@ -115,13 +115,14 @@ body {
 .category-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures image fills container while maintaining aspect ratio */
 }
 
 .category-item p {
   margin-top: 10px;
   font-weight: bold;
 }
+
 
 /* Add responsiveness for larger screens */
 @media (min-width: 1200px) {
@@ -133,5 +134,144 @@ body {
   .about-container {
     background-color: #ffffff;
   }
+
+  .category-grid {
+    max-width: 1200px; /* Limit the grid width on larger screens */
+  }
 }
+/* Styling for MovementPage */
+/* Movement Page Styles */
+.movement-page {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movement-page h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movement-page p {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+/* Grid layout for coaches */
+.coaches-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Max 4 coaches per row */
+  gap: 30px;
+  margin-top: 30px;
+  grid-auto-rows: 1fr;
+}
+
+.coach-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coach-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.coach-img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.coach-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.coach-card h3 {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+.coach-type {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #666;
+}
+
+.coach-card p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.coach-card .contact-info {
+  margin-top: 15px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #333;
+}
+
+.contact-icon {
+  font-size: 1.5em;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #0056b3;
+}
+/* Apply Navbar Styling */
+.apply-navbar {
+  display: flex;           /* Enable flexbox layout */
+  justify-content: flex-end; /* Align items to the right */
+  gap: 10px;               /* Space between buttons */
+  padding: 10px 30px;      /* Optional: Adds some padding to the nav */
+}
+
+.apply-btn, .login-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.apply-btn:hover, .login-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* For responsiveness */
+@media (max-width: 1200px) {
+  .coaches-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 coaches per row on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .coaches-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 coaches per row on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .coaches-grid {
+    grid-template-columns: 1fr; /* 1 coach per row on mobile screens */
+  }
+}
+
 
