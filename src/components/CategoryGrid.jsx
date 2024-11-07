@@ -1,7 +1,6 @@
-// src/components/CategoryGrid.jsx
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import dietImage from'../assets/diet.jpg';
+import { Link } from 'react-router-dom';
+import dietImage from '../assets/diet.jpg'; // Update this path as needed
 
 // Static categories with placeholder images
 const categories = [

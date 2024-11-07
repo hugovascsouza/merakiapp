@@ -5,26 +5,17 @@
   box-sizing: border-box;
 }
 
-/* Global styles */
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
 }
 
-/* Navbar Styling */
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 30px;
-  text-align: center;
-}
+/* ============================== */
+/* Homepage Specific Styles */
+/* ============================== */
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-/* Home Container - Takes full height of the screen */
+/* Home Container - Full height of the screen */
 .home-container {
   display: flex;
   justify-content: center;
@@ -58,7 +49,24 @@ body {
   background-color: #e55c00;
 }
 
-/* About Container - Takes full height of the screen */
+/* ============================== */
+/* Common Page Layout Styles */
+/* ============================== */
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* About Section */
 .about-container {
   display: flex;
   justify-content: center;
@@ -91,7 +99,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Category Grid */
 .category-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 items per row */
@@ -105,7 +112,7 @@ body {
 }
 
 .category-img-container {
-  height: 300px; /* Increase the height here */
+  height: 300px;
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
@@ -115,7 +122,7 @@ body {
 .category-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image fills container while maintaining aspect ratio */
+  object-fit: cover;
 }
 
 .category-item p {
@@ -123,49 +130,94 @@ body {
   font-weight: bold;
 }
 
+/* ============================== */
+/* Movement, Diet, Happiness, Quiet Pages */
+/* ============================== */
 
-/* Add responsiveness for larger screens */
-@media (min-width: 1200px) {
-  .home-container {
-    text-align: center;
-    background-color: #007BFF;
-  }
-
-  .about-container {
-    background-color: #ffffff;
-  }
-
-  .category-grid {
-    max-width: 1200px; /* Limit the grid width on larger screens */
-  }
-}
-/* Styling for MovementPage */
-/* Movement Page Styles */
-.movement-page {
+/* Shared Page Styling */
+.page-container {
   padding: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.movement-page h1 {
+.page-container h1 {
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.movement-page p {
+.page-container p {
   text-align: center;
   font-size: 1.2em;
   margin: 20px 0;
 }
 
-/* Grid layout for coaches */
+/* Filter Section */
+.filters-container {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.filter-sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.filter-sidebar h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.filter-section select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.apply-filters-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.apply-filters-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Coaches Listing */
+.coaches-listing {
+  flex-grow: 1;
+  padding: 20px;
+}
+
 .coaches-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Max 4 coaches per row */
   gap: 30px;
   margin-top: 30px;
-  grid-auto-rows: 1fr;
 }
 
 .coach-card {
@@ -232,12 +284,15 @@ body {
 .contact-icon:hover {
   color: #0056b3;
 }
-/* Apply Navbar Styling */
+
+/* ============================== */
+/* Navbar Button Styles (Used in various pages) */
+/* ============================== */
 .apply-navbar {
-  display: flex;           /* Enable flexbox layout */
-  justify-content: flex-end; /* Align items to the right */
-  gap: 10px;               /* Space between buttons */
-  padding: 10px 30px;      /* Optional: Adds some padding to the nav */
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 30px;
 }
 
 .apply-btn, .login-btn {
@@ -254,8 +309,10 @@ body {
   background-color: #0056b3;
 }
 
+/* ============================== */
+/* Responsive Styles */
+/* ============================== */
 
-/* For responsiveness */
 @media (max-width: 1200px) {
   .coaches-grid {
     grid-template-columns: repeat(3, 1fr); /* 3 coaches per row on medium screens */
@@ -272,6 +329,36 @@ body {
   .coaches-grid {
     grid-template-columns: 1fr; /* 1 coach per row on mobile screens */
   }
+
+  .filters-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters select {
+    width: 100%;
+  }
 }
 
+.no-coaches-message {
+  padding: 20px;
+  background-color: #ffecb3; /* Light yellow background */
+  color: #856404; /* Darker yellow-brown text */
+  border: 1px solid #ffeeba; /* Light border */
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
 
+.similar-coaches {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.similar-coaches h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}

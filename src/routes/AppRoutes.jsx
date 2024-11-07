@@ -1,4 +1,3 @@
-// src/routes/AppRoutes.jsx
 import React, { useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
@@ -9,10 +8,8 @@ import QuietPage from '../pages/QuietPage';
 import HappinessPage from '../pages/HappinessPage';
 
 const HomeLayout = () => {
-  // Create a reference for the Categories section
   const categoriesRef = useRef(null);
 
-  // Scroll to the categories section when the button is clicked
   const scrollToCategories = () => {
     categoriesRef.current.scrollIntoView({
       behavior: 'smooth',
