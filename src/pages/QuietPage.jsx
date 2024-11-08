@@ -6,7 +6,6 @@ const QuietPage = () => {
     <div className="quiet-page">
       <h1>Quiet Coaches</h1>
       <p>Here are the coaches for the Quiet category!</p>
-      {/* You can replace this with dynamic content later */}
     </div>
   );
 };
