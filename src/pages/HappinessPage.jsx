@@ -1,6 +1,6 @@
 import React from 'react';
 import { happinessMockCoaches } from '../data/happinessMockCoaches'; // Import the mock coaches data for happiness
-import CoachesPage from '../components/CoachesPage'; // Import the reusable CoachesPage component
+import CoachesPage from './CoachesPage'; // Import the reusable CoachesPage component
 
 const HappinessPage = () => {
   const categories = [

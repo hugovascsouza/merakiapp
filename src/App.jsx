@@ -1,18 +1,15 @@
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
+import Navbar from './components/Navbar';
 import AppRoutes from './routes/AppRoutes';
 
 const App = () => (
   <Router>
     <div>
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo">Meraki</div>
-      </nav>
-
-      {/* App Routes */}
+      <Navbar /> 
       <AppRoutes />
     </div>
   </Router>

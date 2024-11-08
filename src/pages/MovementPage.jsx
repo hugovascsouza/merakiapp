@@ -1,5 +1,5 @@
 import React from 'react';
-import CoachesPage from '../components/CoachesPage';
+import CoachesPage from './CoachesPage';
 import { movementMockCoaches } from '../data/movementMockCoaches';
 
 const MovementPage = () => {

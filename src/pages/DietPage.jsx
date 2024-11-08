@@ -1,6 +1,6 @@
 import React from 'react';
 import { dietMockCoaches } from '../data/dietMockCoaches'; // Import the mock coaches data
-import CoachesPage from '../components/CoachesPage'; // Import the reusable CoachesPage component
+import CoachesPage from './CoachesPage'; // Import the reusable CoachesPage component
 
 const DietPage = () => {
   const categories = [

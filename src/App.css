@@ -53,19 +53,6 @@ body {
 /* Common Page Layout Styles */
 /* ============================== */
 
-/* Navbar Styling */
-.navbar {
-  background-color: #333;
-  color: white;
-  padding: 30px;
-  text-align: center;
-}
-
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 /* About Section */
 .about-container {
   display: flex;
