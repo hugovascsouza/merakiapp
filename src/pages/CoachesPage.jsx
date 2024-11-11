@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import FilterSelect from '../components/FilterSelect';
 import CoachCard from '../components/CoachCard';
+import './CoachesPage.css';
 
 const CoachesPage = ({ title, description, mockCoachesData, categories }) => {
   const [coaches, setCoaches] = useState(mockCoachesData);
@@ -10,7 +11,7 @@ const CoachesPage = ({ title, description, mockCoachesData, categories }) => {
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [filteredCoaches, setFilteredCoaches] = useState(mockCoachesData);
 
-  // Filter logic
+  // Filtering
   const handleFilterChange = () => {
     let filtered = mockCoachesData;
 
@@ -29,7 +30,7 @@ const CoachesPage = ({ title, description, mockCoachesData, categories }) => {
     setFilteredCoaches(filtered);
   };
 
-  // Similar coaches fallback
+  // Similar coaches
   const getSimilarOptions = () => {
     let similarOptions = [];
 

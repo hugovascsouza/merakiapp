@@ -3,7 +3,19 @@ import CoachesPage from './CoachesPage';
 import { movementMockCoaches } from '../data/movementMockCoaches';
 
 const MovementPage = () => {
-  const categories = ["Yoga", "Pilates", "Strength Training"];
+  const categories = [
+    "Kettlebell", 
+    "Dumbbell", 
+    "Stretching", 
+    "Mobility", 
+    "Powerlifting",
+    "Recovery", 
+    "Calisthenics", 
+    "Core", 
+    "Weightloss", 
+    "Bodybuilding"
+  ];
+  
   const description = "Discover top coaches for fitness, yoga, pilates, and more to improve your movement and strength.";
 
   return (

@@ -1,0 +1,148 @@
+/* Coaches Pages Styles */
+.page-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .page-container h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #76b5c5;
+  }
+  
+  .page-container p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Filter Section */
+  .filters-container {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    margin: 20px 0;
+    padding-left: 30px;
+  }
+  
+  .filter-sidebar {
+    width: 250px;
+    background-color: #76b5c5;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .filter-sidebar h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .filter-section select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .apply-filters-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #063970;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .apply-filters-btn:hover {
+    background-color: #063970;
+  }
+  
+  /* Coaches Listing */
+  .coaches-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .coach-card {
+    background-color: #76b5c5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .coach-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .coach-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .coach-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .coach-card h3 {
+    font-size: 1.8em;
+    margin: 10px 0;
+  }
+  
+  .coach-type {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #000000;
+  }
+  
+  .coach-card p {
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333;
+  }
+  
+  .contact-icon {
+    font-size: 1.5em;
+    color: #063970;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-icon:hover {
+    color: #0056b3;
+  }

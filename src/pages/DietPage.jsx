@@ -6,13 +6,13 @@ const DietPage = () => {
   const categories = [
     "Paleo Diet",
     "Vegan Diet",
-    "Carnivore Diet",
+    "Animal Based Diet",
     "Keto Diet",
     "Intermittent Fasting",
     "Plant-Based Nutrition",
     "Sports Nutrition",
     "Gut Health & Microbiome",
-    "Weight Loss Nutrition",
+    "Weight Loss",
     "Healthy Eating Habits"
   ];
 

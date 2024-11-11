@@ -6,21 +6,21 @@ const HappinessPage = () => {
   const categories = [
     "Visual Arts (Painting & Drawing)",
     "Digital Art & Graphic Design",
-    "Creative Writing",
+    "Writing",
     "Music Composition & Songwriting",
     "Photography",
     "Film & Video Production",
     "Theater & Acting",
-    "Dance & Choreography",
+    "Language Teaching",
     "Creative Entrepreneurship",
     "Strategy & Games"
   ];
 
-  const description = "Explore your creative side and find experts who can guide you in visual arts, music, writing, theater, and more to help you discover happiness through creativity.";
+  const description = "Explore your creative side and find experts who can guide and teach you a new skill in visual arts, music, writing, theater, and more to help you discover happiness through creativity.";
 
   return (
     <CoachesPage 
-      title="Creative Experts" 
+      title="Creative Experts and Teachers" 
       description={description} // Pass custom description
       mockCoachesData={happinessMockCoaches} // You'll need to define happinessMockCoaches similar to dietMockCoaches
       categories={categories} 
