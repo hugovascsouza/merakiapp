@@ -3,7 +3,7 @@ export const happinessMockCoaches = [
     {
       id: 1,
       name: "Sophia Brown",
-      type: "Creative Writing, Storytelling & Poetry",
+      type: "Creative Writing & Story Telling",
       country: "USA",
       services: ["Writing",],
       languages: ["English"],
@@ -18,7 +18,7 @@ export const happinessMockCoaches = [
     {
       id: 2,
       name: "James Smith",
-      type: "Chess Master",
+      type: "Chess Coach",
       country: "Canada",
       services: ["Strategy & Games"],
       languages: ["English", "French"],
@@ -33,10 +33,10 @@ export const happinessMockCoaches = [
     {
       id: 3,
       name: "Isabella Clark",
-      type: "English, French & Spanish Teacher",
+      type: "French Teacher",
       country: "UK",
       services: ["Language Teaching"],
-      languages: ["English", "French", "Spanish",],
+      languages: ["English", "French",],
       location: "London, UK",
       image: "https://img.freepik.com/free-photo/young-woman-reading-library_1303-19031.jpg?t=st=1731320843~exp=1731324443~hmac=4e7c561186ae8ad5dde094db7b4db75e858fdaf3a4cd74bd79342b6b10be96cf&w=1060",
       instagram: "isabella_clark_music",
@@ -61,10 +61,10 @@ export const happinessMockCoaches = [
     {
       id: 5,
       name: "Jake Williams",
-      type: "Digital Artist & Graphic Designer",
+      type: "Digital Art & Graphic Designer",
       country: "USA",
       services: ["Digital Art & Graphic Design"],
-      languages: ["English", "Portuguese"],
+      languages: ["English",],
       location: "Los Angeles, CA",
       image: "https://img.freepik.com/free-photo/side-view-woman-drawing-tablet_23-2150040125.jpg?t=st=1731321049~exp=1731324649~hmac=0485d1539022746355ab39ad51af372f491fda27e75e09134a784bd5dbfab6e3&w=360",
       instagram: "avawilliams_dance",

@@ -16,7 +16,7 @@ const HappinessPage = () => {
     "Strategy & Games"
   ];
 
-  const description = "Explore your creative side and find experts who can guide and teach you a new skill in visual arts, music, writing, theater, and more to help you discover happiness through creativity.";
+  const description = "Explore your creative side and find experts who can help you improve or learn a new skill.";
 
   return (
     <CoachesPage 

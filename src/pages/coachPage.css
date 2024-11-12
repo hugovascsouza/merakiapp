@@ -1,47 +1,36 @@
-/* Coaches Pages Styles */
-.page-container {
-    padding: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .page-container h1 {
-    font-size: 2.5em;
+.coaches-page h1 {
+    text-align: center;
+    margin-top:20px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: #063970; 
+}
+.coaches-page p {
     text-align: center;
     margin-bottom: 20px;
-    color: #76b5c5;
-  }
-  
-  .page-container p {
-    text-align: center;
-    font-size: 1.2em;
-    margin: 20px 0;
-    color: #333;
-  }
-  
-  /* Filter Section */
-  .filters-container {
+    font-size: 25px;
+    color: #333
+}
+.filters-container {
     display: flex;
     gap: 30px;
     justify-content: flex-start;
     margin: 20px 0;
-    padding-left: 30px;
   }
   
   .filter-sidebar {
     width: 250px;
-    background-color: #76b5c5;
-    padding: 20px;
+    background-color: #fff;
+    padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   
   .filter-sidebar h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
-    color: #ffffff;
   }
   
   .filter-section {
@@ -51,11 +40,10 @@
   .filter-section h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color: #ffffff;
   }
   
   .filter-section select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -64,7 +52,7 @@
   }
   
   .apply-filters-btn {
-    width: 100%;
+    width: 95%;
     padding: 12px;
     background-color: #063970;
     color: white;
@@ -75,19 +63,25 @@
   }
   
   .apply-filters-btn:hover {
-    background-color: #063970;
+    background-color: #333;
   }
   
   /* Coaches Listing */
+  .coaches-listing {
+    flex-grow: 1;
+    padding: 0px;
+  }
+  
   .coaches-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Max 4 coaches per row */
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-right: 30px;
   }
   
   .coach-card {
-    background-color: #76b5c5;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -116,19 +110,24 @@
   }
   
   .coach-card h3 {
-    font-size: 1.8em;
+    font-size: 1.4em;
     margin: 10px 0;
   }
   
   .coach-type {
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-style: italic;
-    color: #000000;
+    color: #666666;
   }
   
   .coach-card p {
-    font-size: 1.1em;
-    margin: 5px 0;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 6px 0;
+  }
+  
+  .coach-card .contact-info {
+    margin-top: 15px;
   }
   
   .contact-info a {
@@ -138,11 +137,33 @@
   }
   
   .contact-icon {
-    font-size: 1.5em;
-    color: #063970;
+    font-size: 1.3em;
+    color: #007BFF;
     transition: color 0.3s ease;
   }
   
   .contact-icon:hover {
     color: #0056b3;
+  }
+  .no-coaches-message {
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #9ac3ea; /* Light yellow background */
+    color: #333; /* Darker yellow-brown text */
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .similar-coaches {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .similar-coaches h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
