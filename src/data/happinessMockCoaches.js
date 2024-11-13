@@ -1,7 +1,7 @@
 // src/data/happinessMockCoaches.js
 export const happinessMockCoaches = [
     {
-      id: 1,
+      id: 6,
       name: "Sophia Brown",
       type: "Creative Writing & Story Telling",
       country: "USA",
@@ -16,7 +16,7 @@ export const happinessMockCoaches = [
       website: "http://sophiabrownwriting.com"
     },
     {
-      id: 2,
+      id: 7,
       name: "James Smith",
       type: "Chess Coach",
       country: "Canada",
@@ -31,7 +31,7 @@ export const happinessMockCoaches = [
       website: "http://jamessmithart.com"
     },
     {
-      id: 3,
+      id: 8,
       name: "Isabella Clark",
       type: "French Teacher",
       country: "UK",
@@ -45,7 +45,7 @@ export const happinessMockCoaches = [
       youtube: "http://youtube.com/isabellaclarkmusic"
     },
     {
-      id: 4,
+      id: 9,
       name: "Liam Davis",
       type: "Film & Video Edition",
       country: "Australia",
@@ -59,7 +59,7 @@ export const happinessMockCoaches = [
       website: "http://liamdavisfilms.com"
     },
     {
-      id: 5,
+      id: 10,
       name: "Jake Williams",
       type: "Digital Art & Graphic Designer",
       country: "USA",

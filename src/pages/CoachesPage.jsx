@@ -1,5 +1,4 @@
-// src/pages/CoachesPage.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FilterSelect from '../components/FilterSelect';
 import CoachCard from '../components/CoachCard';
 import './coachPage.css';
@@ -10,6 +9,11 @@ const CoachesPage = ({ title, description, mockCoachesData, categories }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [filteredCoaches, setFilteredCoaches] = useState(mockCoachesData);
+
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Filtering
   const handleFilterChange = () => {

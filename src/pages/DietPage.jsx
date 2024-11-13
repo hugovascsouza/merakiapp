@@ -1,6 +1,6 @@
 import React from 'react';
-import { dietMockCoaches } from '../data/dietMockCoaches'; // Import the mock coaches data
-import CoachesPage from './CoachesPage'; // Import the reusable CoachesPage component
+import { dietMockCoaches } from '../data/dietMockCoaches'; 
+import CoachesPage from './CoachesPage';
 
 const DietPage = () => {
   const categories = [
@@ -21,7 +21,7 @@ const DietPage = () => {
   return (
     <CoachesPage 
       title="Nutrition Experts" 
-      description={description} // Pass custom description
+      description={description} 
       mockCoachesData={dietMockCoaches} 
       categories={categories} 
     />

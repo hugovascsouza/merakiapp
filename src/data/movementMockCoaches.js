@@ -3,7 +3,7 @@
 export const movementMockCoaches = [
     
     {
-      id: 1,
+      id: 11,
       name: "Olivia Green",
       type: "Mobility Coach",
       country: "Australia",
@@ -17,9 +17,9 @@ export const movementMockCoaches = [
       website: "http://oliviagreenmobility.com"
     },
     {
-      id: 2,
+      id: 12,
       name: "Mark Johnson",
-      type: "Bodybuilding & PowerLifter Coach",
+      type: "Bodybuilding & PowerLifting",
       country: "USA",
       services: ["Bodybuilding", "Powerlifting", "Strength Training"],
       languages: ["English", "Italian"],
@@ -31,8 +31,8 @@ export const movementMockCoaches = [
       linkedin: "mark-johnson-bodybuilding"
     },
     {
-      id: 3,
-      name: "Emily Carter",
+      id: 13,
+      name: "Cherith Harry",
       type: "Calisthenics & Mobility Coach",
       country: "Canada",
       services: ["Calisthenics", "Stretching", "Mobility"],
@@ -44,7 +44,7 @@ export const movementMockCoaches = [
       linkedin: "emily-carter-calisthenics"
     },
     {
-      id: 4,
+      id: 14,
       name: "Chris Davis",
       type: "Kettlebell & Strength Coach",
       country: "USA",
@@ -58,7 +58,7 @@ export const movementMockCoaches = [
       website: "http://chrisdavisstrength.com"
     },
     {
-      id: 5,
+      id: 15,
       name: "Sophia Brown",
       type: "Yoga & Mobility Coach",
       country: "UK",

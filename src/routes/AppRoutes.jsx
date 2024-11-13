@@ -18,6 +18,7 @@ const AppRoutes = () => (
     <Route path="/diet" element={<DietPage />} />
     <Route path="/quiet" element={<QuietPage />} />
     <Route path="/happiness" element={<HappinessPage />} />
+
   </Routes>
 );
 

@@ -1,4 +1,3 @@
-// src/components/CoachCard.jsx
 import React from 'react';
 import { FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaGlobe, FaYoutube } from 'react-icons/fa';
 

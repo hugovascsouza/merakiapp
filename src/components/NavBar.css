@@ -16,12 +16,12 @@
 }
 
 .navbar .logo a {
-  display: block; /* Ensure the link takes up the full space */
+  display: block; 
 }
 
 .navbar .logo-img {
-  width: 50px;  /* Adjust size of your logo */
-  height: auto;  /* Maintain aspect ratio */
+  width: 50px;  
+  height: auto;  
 }
 
 /* Navigation links */
@@ -40,7 +40,6 @@
   color: #666;
 }
 
-/* Optional: Make links stand out when hovered */
 .nav-links a:active {
-  color: #666;  /* Darker color when clicked */
+  color: #666; 
 }

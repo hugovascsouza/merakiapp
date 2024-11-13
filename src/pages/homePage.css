@@ -11,21 +11,19 @@
     background-color: #f4f4f9;
   }
   
-  /* ============================== */
   /* Homepage Specific Styles */
-  /* ============================== */
   
-  /* Home Container - Full height of the screen */
+  /* Home Container */
   .home-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 75vh;
     text-align: center;
-    background-color: #76b5c5; /* Fallback color in case the image doesn't load */
+    background-color: #76b5c5; 
     background-image: url('https://img.freepik.com/free-photo/fantastic-seascape-with-ripples_1232-424.jpg?t=st=1731342219~exp=1731345819~hmac=ba764b7ea03fc4cba80569bff85f37cd66ebefcb6a516807e0857e94e5a3cdcc&w=1060');
-    background-size: cover; /* Ensure the image covers the entire container */
-    background-position: center; /* Centers the image */
+    background-size: cover; 
+    background-position: center; 
     color: #063970;
   }
   
@@ -62,8 +60,8 @@
     background-color: #063970;
     color: #ffffff;
     padding: 40px 20px;
-    min-height: 100vh;  /* Ensure it fills the viewport height */
-    box-sizing: border-box; /* Include padding in the height calculation */
+    min-height: 100vh;  
+    box-sizing: border-box; 
   }
   
   /* About Content Styling */
@@ -74,7 +72,7 @@
   }
   
   .about-content header h1 {
-    font-size: 3rem; /* Use rem for responsive font sizes */
+    font-size: 3rem; 
     color: #ffffff;
     margin-bottom: 15px;
   }
@@ -101,8 +99,8 @@
     flex-direction: column;
     gap: 15px;
     font-size: 1.5rem;
-    text-align: center; /* Ensures text is centered in each item */
-    align-items: center; /* Horizontally center the items */
+    text-align: center; 
+    align-items: center; 
   }
   
   /* Individual List Items */
@@ -110,8 +108,8 @@
     position: relative;
     color: #ffffff;
     display: flex;
-    align-items: center; /* Align icon and text */
-    justify-content: center; /* Center icon and text horizontally */
+    align-items: center; 
+    justify-content: center; 
   }
   
   /* Icon Styling */
@@ -119,33 +117,32 @@
     content: '✔';
     color: #9ac3ea;
     font-size: 1.5em;
-    margin-right: 10px; /* Space between icon and text */
-    flex-shrink: 0; /* Prevent icon from shrinking */
+    margin-right: 10px; 
+    flex-shrink: 0; 
   }
   
   /* Responsive Design Adjustments */
   @media (max-width: 768px) {
     .about-content h1 {
-      font-size: 2.5rem; /* Adjust font size for smaller screens */
+      font-size: 2.5rem; 
     }
   
     .about-content h2 {
-      font-size: 1.2rem; /* Slightly smaller heading */
+      font-size: 1.2rem; 
     }
   
     .about-content p {
-      font-size: 1rem; /* Adjust paragraph text size */
+      font-size: 1rem; 
     }
   
     .life-elements {
-      font-size: 1.2rem; /* Smaller list font size on smaller screens */
+      font-size: 1.2rem; 
     }
   
     .life-elements li {
-      font-size: 1.1rem; /* Slightly reduce list item font size */
+      font-size: 1.1rem; 
     }
   }
-  
   
   /* Categories Section Styling */
   .categories-content {

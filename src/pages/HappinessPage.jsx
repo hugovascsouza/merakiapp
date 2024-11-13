@@ -1,6 +1,6 @@
 import React from 'react';
-import { happinessMockCoaches } from '../data/happinessMockCoaches'; // Import the mock coaches data for happiness
-import CoachesPage from './CoachesPage'; // Import the reusable CoachesPage component
+import { happinessMockCoaches } from '../data/happinessMockCoaches'; 
+import CoachesPage from './CoachesPage'; 
 
 const HappinessPage = () => {
   const categories = [
@@ -21,8 +21,8 @@ const HappinessPage = () => {
   return (
     <CoachesPage 
       title="Creative Experts and Teachers" 
-      description={description} // Pass custom description
-      mockCoachesData={happinessMockCoaches} // You'll need to define happinessMockCoaches similar to dietMockCoaches
+      description={description} 
+      mockCoachesData={happinessMockCoaches}
       categories={categories} 
     />
   );

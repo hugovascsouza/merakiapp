@@ -1,11 +1,10 @@
 // src/data/dietMockCoaches.js
-import dietMock1 from '../assets/dietMock1.jpg';  // Adjust the path according to your file structure
-
+import dietMock1 from '../assets/dietMock1.jpg';  
 export const dietMockCoaches = [
     {
       id: 1,
       name: "Alice Green",
-      type: "Animal Based Diet & Gut Health Specialist",
+      type: "Gut Health Specialist",
       country: "USA",
       services: ["Carnivore Diet", "Gut Health & Microbiome"],
       languages: ["English", "Spanish"],
@@ -22,7 +21,7 @@ export const dietMockCoaches = [
       type: "Nutritionist",
       country: "Canada",
       services: ["Health Eating Habits", "Weight Loss"],
-      languages: ["English", "French", "Portuguese"],
+      languages: ["English", "French"],
       location: "Toronto, ON",
       image: dietMock1,
       instagram: "john_doe_diet",

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import dietImage from '../assets/diet.jpg'; // Update this path as needed
 
 // Static categories with placeholder images and descriptions
 const categories = [
@@ -40,7 +39,7 @@ const CategoryGrid = () => {
           <img src={category.image} alt={category.name} className="category-img" />
         </div>
         <p className="category-name">{category.name}</p>
-        <p className="category-description">{category.description}</p> {/* Add description text here */}
+        <p className="category-description">{category.description}</p> 
       </Link>
     </div>
   ))}
