@@ -21,3 +21,4 @@ Creating scalable and secure database schemas for efficient data storage and ret
 
 ## How It Works
 Watch the demo video: Meraki Walkthrough
+https://youtu.be/7Th21fMu-Lc
